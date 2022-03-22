@@ -2,12 +2,12 @@ import os
 import cv2
 import glob
 import gym
-import vizdoomgym
+#import vizdoomgym
 import matplotlib.pyplot as plt
 from collections import Counter
-#from gym.wrappers import Monitor
+from gym.wrappers import Monitor
 
-from gym.wrappers.monitor import Monitor
+#from gym.wrappers.monitor import Monitor
 
 env = gym.make('VizdoomCorridor-v0')
 action_num = env.action_space.n
